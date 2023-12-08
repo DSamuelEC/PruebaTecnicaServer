@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const nameDb = 'sneaker-app'
+const nameDb = 'challenge'
 const user = 'drenvio';
 const password = 'moM5f3AodwLE5d0A';
 const DB_URI = `mongodb://${user}:${password}@ac-aemgtkt-shard-00-00.unqyghm.mongodb.net:27017,ac-aemgtkt-shard-00-01.unqyghm.mongodb.net:27017,ac-aemgtkt-shard-00-02.unqyghm.mongodb.net:27017/${nameDb}?ssl=true&replicaSet=atlas-y8oxsk-shard-0&authSource=admin`;

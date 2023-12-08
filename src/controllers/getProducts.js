@@ -2,10 +2,8 @@ const Product = require('../models/Products');
 
 const getProducts = async (req, res) => {
     try {
-        // Encuentra todos los productos con stock mayor que cero
-        const products = await Product.find({ /*stock: { $gt: 0 }*/ });
+        const products = await Product.findProductsInStock();
         console.log('este es el products', products);
-        // console.log('esquemaaaa', Product.schema.obj);
         res.json(products);
     } catch (error) {
         console.error(error);
