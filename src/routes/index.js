@@ -1,15 +1,9 @@
 const { Router } = require("express");
 const routerProducts = require("./product");
+const routerPrices = require("./prices");
 const router = Router();
 
-router.use('/products', routerProducts)
+router.use('/products', routerProducts);
+router.use('/price', routerPrices);
 
 module.exports = router;
-
-// const { Router } = require("express");
-// const routerProducts = require("./product"); // Ajusta el nombre de la importación
-// const router = Router();
-
-// router.use('/products', routerProducts); // Ajusta el nombre del router
-
-// module.exports = router;
